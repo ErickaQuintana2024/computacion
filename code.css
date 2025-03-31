@@ -1,0 +1,315 @@
+/* Estilos Generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #eef2f7; /* Fondo azul grisáceo claro */
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px 30px 40px 30px; /* Más padding inferior */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #003366; /* Azul oscuro */
+    margin-bottom: 30px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 15px;
+}
+
+h2.section-title {
+    color: #0056b3; /* Azul medio */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 5px solid #28a745; /* Verde */
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+
+/* Input de Nombre */
+.name-input-section {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.name-input-section label {
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 1.1em;
+    color: #003366;
+}
+
+.name-input-section input[type="text"] {
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    min-width: 300px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Estilo de Tarjeta General */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Tarjetas de Preguntas */
+.question-card {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Fondo ligeramente gris */
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.question-card:hover {
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.question-text {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.question-text strong {
+    color: #0056b3; /* Azul */
+    margin-right: 5px;
+}
+
+/* Opciones de Respuesta (Selección Múltiple y V/F) */
+.options label {
+    display: block; /* Una opción por línea */
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.options label:hover {
+    background-color: #eef2f7; /* Azul muy claro al pasar */
+    border-color: #0056b3;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #0056b3; /* Color del radio seleccionado */
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+}
+
+/* Opciones V/F (Alinear lado a lado opcionalmente en pantallas grandes) */
+.options.tf {
+    display: flex;
+    gap: 15px; /* Espacio entre V y F */
+}
+.options.tf label {
+    flex-grow: 1; /* Que ocupen el espacio disponible */
+    text-align: center;
+}
+
+/* Tarjetas de Emparejamiento */
+.matching-card .question-text {
+    margin-bottom: 20px;
+}
+
+.matching-pairs .match-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.matching-pairs .match-item:last-child {
+    border-bottom: none;
+}
+
+.matching-pairs .item {
+    flex-basis: 40%; /* Espacio para el término/hito */
+    font-weight: 500;
+}
+
+.matching-pairs .arrow {
+    margin: 0 15px;
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.matching-pairs select {
+    flex-grow: 1; /* Que ocupe el resto */
+    padding: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 0.95em;
+    background-color: #fff;
+}
+
+/* Botón de Envío/Revisión */
+.submit-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#submit-btn {
+    background: linear-gradient(135deg, #28a745, #218838); /* Gradiente verde */
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px; /* Botón redondeado */
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.4);
+}
+
+#submit-btn:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Área de Resultados */
+#result-area {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #d1ecf1; /* Azul muy claro informativo */
+    border: 1px solid #bee5eb;
+    text-align: center;
+}
+
+#result-area h2 {
+    margin-top: 0;
+    color: #0c5460; /* Azul oscuro */
+    border: none; /* Quitar borde del h2 aquí */
+    padding: 0;
+}
+
+#result-text, #score-text {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#score-text strong {
+    font-size: 1.6em;
+    color: #0056b3; /* Azul */
+    display: block;
+    margin-top: 5px;
+}
+
+#feedback-details {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 0.9em;
+    /* Estilos para feedback específico si se implementa */
+}
+/* Ejemplo de clases para feedback (si se usa JS para añadirlo) */
+.correct { color: #155724; background-color: #d4edda; border-left: 3px solid #28a745; padding: 5px; margin-top: 3px; border-radius: 3px;}
+.incorrect { color: #721c24; background-color: #f8d7da; border-left: 3px solid #dc3545; padding: 5px; margin-top: 3px; border-radius: 3px;}
+
+
+/* Instrucción de Envío */
+.submission-instruction {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1em;
+    color: #004085; /* Azul oscuro */
+    padding: 20px;
+    background-color: #cce5ff; /* Azul más claro */
+    border: 1px dashed #b8daff;
+    border-radius: 8px;
+}
+.submission-instruction strong {
+    color: #002752;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px 20px 30px 20px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+    h2.section-title {
+        font-size: 1.3em;
+    }
+
+    .name-input-section input[type="text"] {
+        min-width: 90%;
+    }
+
+    .options.tf {
+        flex-direction: column; /* Apilar V/F en pantallas pequeñas */
+    }
+
+    .matching-pairs .match-item {
+        flex-direction: column; /* Apilar en pantallas pequeñas */
+        align-items: flex-start; /* Alinear a la izquierda */
+        border: none;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+     .matching-pairs .arrow {
+        display: none; /* Ocultar flecha */
+     }
+     .matching-pairs .item {
+         margin-bottom: 8px;
+         flex-basis: auto; /* Resetear base */
+     }
+     .matching-pairs select {
+         width: 100%; /* Ancho completo */
+     }
+
+    #submit-btn {
+        font-size: 1.1em;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 10px 15px 20px 15px;
+    }
+     h1 {
+        font-size: 1.4em;
+    }
+     h2.section-title {
+        font-size: 1.2em;
+    }
+     .question-text {
+         font-size: 1em;
+     }
+     .options label {
+         padding: 8px 12px;
+         font-size: 0.95em;
+     }
+     .name-input-section input[type="text"] {
+         font-size: 0.95em;
+     }
+}

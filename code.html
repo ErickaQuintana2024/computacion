@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es-SV">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactivo: Introducción a la Robótica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Quiz: Introducción a la Robótica 💡</h1>
+
+        <div class="name-input-section card">
+            <label for="studentName">Nombre del Estudiante:</label>
+            <input type="text" id="studentName" placeholder="Escribe tu nombre completo aquí" required>
+        </div>
+
+        <form id="quiz-form">
+
+            <!-- === Sección 1: Selección Múltiple === -->
+            <h2 class="section-title">Parte I: Selección Múltiple 🤔</h2>
+            <div class="question-card" data-question="1">
+                <p class="question-text"><strong>1.</strong> ¿Cuál es la definición más precisa de Robótica?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> a) El estudio de los robots de ciencia ficción.</label>
+                    <label><input type="radio" name="q1" value="b"> b) La construcción de cualquier máquina automática.</label>
+                    <label><input type="radio" name="q1" value="c"> c) La ciencia e ingeniería del diseño, construcción y aplicación de robots.</label>
+                    <label><input type="radio" name="q1" value="d"> d) La programación de computadoras.</label>
+                </div>
+            </div>
+             <div class="question-card" data-question="2">
+                <p class="question-text"><strong>2.</strong> ¿Qué característica diferencia principalmente a un robot de una máquina automática simple?</p>
+                 <div class="options">
+                    <label><input type="radio" name="q2" value="a"> a) Usa electricidad.</label>
+                    <label><input type="radio" name="q2" value="b"> b) Tiene partes móviles.</label>
+                    <label><input type="radio" name="q2" value="c"> c) Su color.</label>
+                    <label><input type="radio" name="q2" value="d"> d) Su capacidad de ser reprogramado y tomar decisiones basadas en sensores.</label>
+                </div>
+            </div>
+             <div class="question-card" data-question="3">
+                 <p class="question-text"><strong>3.</strong> ¿Quién acuñó el término "robot" en su obra de teatro R.U.R.?</p>
+                 <div class="options">
+                     <label><input type="radio" name="q3" value="a"> a) Isaac Asimov</label>
+                     <label><input type="radio" name="q3" value="b"> b) George Devol</label>
+                     <label><input type="radio" name="q3" value="c"> c) Karel Čapek</label>
+                     <label><input type="radio" name="q3" value="d"> d) Alan Turing</label>
+                 </div>
+            </div>
+            <div class="question-card" data-question="4">
+                 <p class="question-text"><strong>4.</strong> ¿Cuál de estos NO es un componente clave típico de un robot?</p>
+                 <div class="options">
+                     <label><input type="radio" name="q4" value="a"> a) Sensores</label>
+                     <label><input type="radio" name="q4" value="b"> b) Actuadores</label>
+                     <label><input type="radio" name="q4" value="c"> c) Sistema de procesamiento (cerebro)</label>
+                     <label><input type="radio" name="q4" value="d"> d) Motor de combustión interna</label>
+                 </div>
+            </div>
+             <div class="question-card" data-question="5">
+                 <p class="question-text"><strong>5.</strong> Las Leyes de la Robótica fueron formuladas por:</p>
+                 <div class="options">
+                     <label><input type="radio" name="q5" value="a"> a) Karel Čapek</label>
+                     <label><input type="radio" name="q5" value="b"> b) Isaac Asimov</label>
+                     <label><input type="radio" name="q5" value="c"> c) La ONU</label>
+                     <label><input type="radio" name="q5" value="d"> d) George Devol</label>
+                 </div>
+            </div>
+            <!-- === Fin Sección 1 === -->
+
+            <!-- === Sección 2: Verdadero/Falso === -->
+            <h2 class="section-title">Parte II: Verdadero o Falso ✅ / ❌</h2>
+             <div class="question-card" data-question="6">
+                <p class="question-text"><strong>6.</strong> Una tostadora automática es un ejemplo de robot.</p>
+                 <div class="options tf">
+                     <label><input type="radio" name="q6" value="true"> Verdadero</label>
+                     <label><input type="radio" name="q6" value="false"> Falso</label>
+                 </div>
+            </div>
+            <div class="question-card" data-question="7">
+                 <p class="question-text"><strong>7.</strong> El primer robot industrial (Unimate) se utilizó en la industria textil.</p>
+                 <div class="options tf">
+                     <label><input type="radio" name="q7" value="true"> Verdadero</label>
+                     <label><input type="radio" name="q7" value="false"> Falso</label>
+                 </div>
+            </div>
+            <div class="question-card" data-question="8">
+                 <p class="question-text"><strong>8.</strong> La robótica combina disciplinas como mecánica, electrónica e informática.</p>
+                <div class="options tf">
+                     <label><input type="radio" name="q8" value="true"> Verdadero</label>
+                     <label><input type="radio" name="q8" value="false"> Falso</label>
+                 </div>
+            </div>
+            <div class="question-card" data-question="9">
+                <p class="question-text"><strong>9.</strong> Los "sensores" son las partes del robot que realizan las acciones físicas (moverse, agarrar).</p>
+                 <div class="options tf">
+                     <label><input type="radio" name="q9" value="true"> Verdadero</label>
+                     <label><input type="radio" name="q9" value="false"> Falso</label>
+                 </div>
+            </div>
+             <div class="question-card" data-question="10">
+                 <p class="question-text"><strong>10.</strong> La robótica tiene aplicaciones importantes en medicina, como en cirugía asistida.</p>
+                 <div class="options tf">
+                    <label><input type="radio" name="q10" value="true"> Verdadero</label>
+                    <label><input type="radio" name="q10" value="false"> Falso</label>
+                 </div>
+            </div>
+            <!-- === Fin Sección 2 === -->
+
+             <!-- === Sección 3: Arrastrar y Soltar (Simulado con Select) === -->
+            <h2 class="section-title">Parte III: Relacionar Conceptos 🧩</h2>
+            <div class="question-card matching-card" data-question="11">
+                <p class="question-text"><strong>11-15.</strong> Selecciona la descripción que mejor corresponde a cada término:</p>
+                <div class="matching-pairs">
+                    <div class="match-item">
+                        <span class="item"><strong>A.</strong> Robot</span> <span class="arrow">➔</span>
+                        <select name="q11_match" required>
+                            <option value="" disabled selected>Selecciona una descripción...</option>
+                            <option value="1">Percibe el entorno.</option>
+                            <option value="2">Rama de la ingeniería y ciencia sobre robots.</option>
+                            <option value="3">Realiza acciones físicas.</option>
+                            <option value="4">Máquina programable con sensores y actuadores.</option>
+                            <option value="5">Capacidad de aprender o simular inteligencia.</option>
+                        </select>
+                    </div>
+                     <div class="match-item">
+                        <span class="item"><strong>B.</strong> Robótica</span> <span class="arrow">➔</span>
+                         <select name="q12_match" required>
+                             <option value="" disabled selected>Selecciona una descripción...</option>
+                             <option value="1">Percibe el entorno.</option>
+                             <option value="2">Rama de la ingeniería y ciencia sobre robots.</option>
+                             <option value="3">Realiza acciones físicas.</option>
+                             <option value="4">Máquina programable con sensores y actuadores.</option>
+                             <option value="5">Capacidad de aprender o simular inteligencia.</option>
+                         </select>
+                    </div>
+                    <div class="match-item">
+                        <span class="item"><strong>C.</strong> Sensor</span> <span class="arrow">➔</span>
+                         <select name="q13_match" required>
+                            <option value="" disabled selected>Selecciona una descripción...</option>
+                             <option value="1">Percibe el entorno.</option>
+                             <option value="2">Rama de la ingeniería y ciencia sobre robots.</option>
+                             <option value="3">Realiza acciones físicas.</option>
+                             <option value="4">Máquina programable con sensores y actuadores.</option>
+                             <option value="5">Capacidad de aprender o simular inteligencia.</option>
+                         </select>
+                    </div>
+                    <div class="match-item">
+                         <span class="item"><strong>D.</strong> Actuador</span> <span class="arrow">➔</span>
+                         <select name="q14_match" required>
+                             <option value="" disabled selected>Selecciona una descripción...</option>
+                             <option value="1">Percibe el entorno.</option>
+                             <option value="2">Rama de la ingeniería y ciencia sobre robots.</option>
+                             <option value="3">Realiza acciones físicas.</option>
+                             <option value="4">Máquina programable con sensores y actuadores.</option>
+                             <option value="5">Capacidad de aprender o simular inteligencia.</option>
+                         </select>
+                    </div>
+                     <div class="match-item">
+                         <span class="item"><strong>E.</strong> Inteligencia Artificial</span> <span class="arrow">➔</span>
+                         <select name="q15_match" required>
+                            <option value="" disabled selected>Selecciona una descripción...</option>
+                             <option value="1">Percibe el entorno.</option>
+                             <option value="2">Rama de la ingeniería y ciencia sobre robots.</option>
+                             <option value="3">Realiza acciones físicas.</option>
+                             <option value="4">Máquina programable con sensores y actuadores.</option>
+                             <option value="5">Capacidad de aprender o simular inteligencia.</option>
+                         </select>
+                    </div>
+                </div>
+            </div>
+            <!-- === Fin Sección 3 === -->
+
+             <!-- === Sección 4: Relacionar Columnas (Simulado con Select) === -->
+            <h2 class="section-title">Parte IV: Relacionar Hitos y Épocas ⏳</h2>
+             <div class="question-card matching-card" data-question="16">
+                <p class="question-text"><strong>16-20.</strong> Selecciona la época o característica que corresponde a cada hito o concepto:</p>
+                 <div class="matching-pairs">
+                     <div class="match-item">
+                        <span class="item"><strong>A.</strong> Término "Robot" (K. Čapek)</span> <span class="arrow">➔</span>
+                         <select name="q16_match" required>
+                            <option value="" disabled selected>Selecciona una época/característica...</option>
+                             <option value="1">Exploración Espacial (1990s)</option>
+                             <option value="2">Primer Robot Industrial (1960s)</option>
+                             <option value="3">Consideraciones Éticas (Sci-Fi)</option>
+                             <option value="4">Origen de la palabra (1920s)</option>
+                             <option value="5">Robots que trabajan con humanos (Siglo XXI)</option>
+                         </select>
+                    </div>
+                    <div class="match-item">
+                        <span class="item"><strong>B.</strong> Leyes de la Robótica</span> <span class="arrow">➔</span>
+                        <select name="q17_match" required>
+                            <option value="" disabled selected>Selecciona una época/característica...</option>
+                             <option value="1">Exploración Espacial (1990s)</option>
+                             <option value="2">Primer Robot Industrial (1960s)</option>
+                             <option value="3">Consideraciones Éticas (Sci-Fi)</option>
+                             <option value="4">Origen de la palabra (1920s)</option>
+                             <option value="5">Robots que trabajan con humanos (Siglo XXI)</option>
+                         </select>
+                    </div>
+                    <div class="match-item">
+                        <span class="item"><strong>C.</strong> Unimate</span> <span class="arrow">➔</span>
+                         <select name="q18_match" required>
+                             <option value="" disabled selected>Selecciona una época/característica...</option>
+                             <option value="1">Exploración Espacial (1990s)</option>
+                             <option value="2">Primer Robot Industrial (1960s)</option>
+                             <option value="3">Consideraciones Éticas (Sci-Fi)</option>
+                             <option value="4">Origen de la palabra (1920s)</option>
+                             <option value="5">Robots que trabajan con humanos (Siglo XXI)</option>
+                         </select>
+                    </div>
+                     <div class="match-item">
+                         <span class="item"><strong>D.</strong> Sojourner (Rover)</span> <span class="arrow">➔</span>
+                         <select name="q19_match" required>
+                             <option value="" disabled selected>Selecciona una época/característica...</option>
+                             <option value="1">Exploración Espacial (1990s)</option>
+                             <option value="2">Primer Robot Industrial (1960s)</option>
+                             <option value="3">Consideraciones Éticas (Sci-Fi)</option>
+                             <option value="4">Origen de la palabra (1920s)</option>
+                             <option value="5">Robots que trabajan con humanos (Siglo XXI)</option>
+                         </select>
+                    </div>
+                    <div class="match-item">
+                        <span class="item"><strong>E.</strong> Cobots</span> <span class="arrow">➔</span>
+                        <select name="q20_match" required>
+                            <option value="" disabled selected>Selecciona una época/característica...</option>
+                            <option value="1">Exploración Espacial (1990s)</option>
+                            <option value="2">Primer Robot Industrial (1960s)</option>
+                            <option value="3">Consideraciones Éticas (Sci-Fi)</option>
+                            <option value="4">Origen de la palabra (1920s)</option>
+                            <option value="5">Robots que trabajan con humanos (Siglo XXI)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- === Fin Sección 4 === -->
+
+        </form> <!-- Fin del Formulario del Quiz -->
+
+        <div class="submit-section">
+            <button type="button" id="submit-btn">Revisar Mis Respuestas 🚀</button>
+        </div>
+
+        <div id="result-area" class="card" style="display: none;">
+            <h2>Resultados del Quiz</h2>
+            <p id="result-text"></p>
+            <p id="score-text"></p>
+            <div id="feedback-details">
+                <!-- Aquí podría ir el feedback detallado (opcional) -->
+            </div>
+        </div>
+
+        <div class="submission-instruction card" style="display: none;">
+             <p>¡Excelente! Toma una <strong>captura de pantalla 📸</strong> de tus resultados (asegúrate de que tu nombre y puntuación sean visibles).</p>
+            <p>Sube y entrega esta captura de pantalla como evidencia en la plataforma <strong>Google Classroom</strong>, en la tarea correspondiente de la materia de <strong>Ciencias de la Computación 💻</strong>.</p>
+        </div>
+
+    </div> <!-- Fin .container -->
+
+    <script src="script.js"></script>
+</body>
+</html>
